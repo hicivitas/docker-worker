@@ -6,4 +6,5 @@ RUN apk --no-cache add openssl git curl nodejs \
     && mv git-lfs-2.1.1/git-lfs /usr/bin/ \
     && rm -rf git-lfs-2.1.1 \
     && rm -rf git-lfs-linux-amd64-2.1.1.tar.gz \
+    && git lfs install \
     && npm i -g yarn
